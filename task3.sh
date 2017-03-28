@@ -1,17 +1,15 @@
 #!/bin/bash
 
-# This script essentially duplicates zadanie3.sh functionality,
+# This script essentially duplicates task2.sh functionality,
 # but is structured using functions.
 # The only difference is that inside saved file
 # each letter is in separate line.
 
-count=$#
-
 function check_args {
 
-  if [ $count -eq "2" ]; then
-    echo You have passed the following arguments: "$1" and "$2".
-    save_to_file $1 $2
+  if [ "$1" -eq "2" ]; then
+    echo You have passed the following arguments: "$2" and "$3".
+    save_to_file $2 $3
   else
     echo You shall pass two arguments.
   fi
@@ -28,4 +26,4 @@ function save_to_file {
   done
 }
 
-check_args $1 $2
+check_args $# $1 $2

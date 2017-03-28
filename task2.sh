@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# This script takes two strings as arguments,
-# displays them.
+# This script takes two strings as arguments
+# and displays them.
 # Additionally script saves first string to the file
 # using second argument as filename. 
 # User is informed in case of illegal argument count.
